@@ -4,8 +4,8 @@
 #include <string>
 
 #define MAX 20
-#define OUTPUT_DATA_FILE_PATH "Assets/Students.txt"
-#define FILE_SEPARATOR ";"
+#define STUDENTS_DATA_FILE_PATH "Assets/StudentsData.txt"
+#define FILE_DELIMITER ";"
 
 typedef struct Student
 {
@@ -22,7 +22,7 @@ void main()
     std::cout << "How many students do you want to register?" << std::endl;
     std::cin >> numberOfStudents;
 
-    file.open(OUTPUT_DATA_FILE_PATH);
+    file.open(STUDENTS_DATA_FILE_PATH);
 
 	if (file.is_open() == false)
 	{
@@ -43,7 +43,7 @@ void main()
 		std::cout << "Insert your age: " << std::endl;
 		std::cin >> student.age;
 
-		file << student.number << FILE_SEPARATOR << student.name << FILE_SEPARATOR << student.age << std::endl;
+		file << student.number << FILE_DELIMITER << student.name << FILE_DELIMITER << student.age << std::endl;
 	}
 
     file.close();
