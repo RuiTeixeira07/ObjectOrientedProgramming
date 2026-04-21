@@ -41,7 +41,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.7", "3\3.7\3.7.vcxproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.8", "3\3.8\3.8.vcxproj", "{1E60927E-8E2C-4EED-9D60-5B1461F90767}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.9", "3\3.3\3.9\3.9.vcxproj", "{D3928C15-15F7-4ADE-AD1A-30E0CFA7F703}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "3.9", "3\3.9\3.9.vcxproj", "{D3928C15-15F7-4ADE-AD1A-30E0CFA7F703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
