@@ -1,4 +1,6 @@
 
+#include <iostream>
+
 #pragma once
 
 class Date
@@ -21,6 +23,7 @@ class Date
 			return _year;
 		}
 		bool operator!=(Date date);
-		bool operator<<(Date date);
 		bool operator>>(Date date);
 };
+
+std::ostream& operator<<(std::ostream& os, Date date);

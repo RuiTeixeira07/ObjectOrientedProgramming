@@ -19,16 +19,11 @@ bool Date::operator!=(Date date)
     return false;
 }
 
-bool Date::operator<<(Date date)
+std::ostream& operator<<(std::ostream& os, Date date)
 {
-    if (_year < date.getYear() ||
-        _year == date.getYear() && _month < date.getMonth() ||
-        _year == date.getYear() && _month == date.getMonth() && _day < date.getDay())
-    {
-        return true;
-    }
-   
-    return false;
+    os << date.getDay() << "/" << date.getMonth() << "/" << date.getYear();
+
+    return os;
 }
 
 bool Date::operator>>(Date date)
