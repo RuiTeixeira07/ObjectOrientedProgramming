@@ -17,19 +17,6 @@ void main()
     }
 
     std::cout << x << std::endl;
-
-    if (x >> y)
-    {
-        std::cout << x.getDay();
-        std::cout << "/" << x.getMonth() << "/";
-        std::cout << x.getYear();
-
-        std::cout << " greater than ";
-
-        std::cout << y.getDay();
-        std::cout << "/" << y.getMonth() << "/";
-        std::cout << y.getYear();
-
-        std::cout << std::endl;
-    }
+    std::cin >> x;
+    std::cout << x << std::endl;
 }

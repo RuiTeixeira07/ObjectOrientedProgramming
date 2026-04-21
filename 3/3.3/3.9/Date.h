@@ -23,7 +23,7 @@ class Date
 			return _year;
 		}
 		bool operator!=(Date date);
-		bool operator>>(Date date);
+		friend std::istream& operator>>(std::istream& is, Date& date);
 };
 
 std::ostream& operator<<(std::ostream& os, Date date);

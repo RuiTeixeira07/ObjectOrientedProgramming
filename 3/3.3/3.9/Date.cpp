@@ -19,21 +19,21 @@ bool Date::operator!=(Date date)
     return false;
 }
 
+std::istream& operator>>(std::istream& is, Date& date)
+{
+    std::cout << "Day: ";
+    is >> date._day;
+    std::cout << "Month: "; 
+    is >> date._month;
+    std::cout << "Year: ";
+    is >> date._year;
+
+    return is;
+}
+
 std::ostream& operator<<(std::ostream& os, Date date)
 {
     os << date.getDay() << "/" << date.getMonth() << "/" << date.getYear();
 
     return os;
-}
-
-bool Date::operator>>(Date date)
-{
-    if (_year > date.getYear() ||
-        _year == date.getYear() && _month > date.getMonth() ||
-        _year == date.getYear() && _month == date.getMonth() && _day > date.getDay())
-    {
-        return true;
-    }
-
-    return false;
 }
